@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "skipLibCheck": true,
+    //мои настройки
+    "noEmitOnError": true, // Запрет генерации JS-файлов при ошибке типов в исходнике
+    "rootDir": "src/scripts", // Название папки с исходными .ts файлами - scripts
+    "outDir": "build", // Название папки с сгенерированными файлами - build
+    "removeComments": true, // Убирает комментарии из исходников в сгенерированных файлах
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src"]
+}
